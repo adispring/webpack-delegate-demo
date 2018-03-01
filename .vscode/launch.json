@@ -8,7 +8,11 @@
       "type": "node",
       "request": "launch",
       "name": "Debug Webpack",
-      "program": "${workspaceFolder}/node_modules/.bin/webpack --config ${file}",
+      "program": "${workspaceFolder}/node_modules/.bin/webpack",
+      "args":[
+        "--config",
+        "${file}"
+      ],
       "env": {
         "NODE_ENV": "production"
       }
